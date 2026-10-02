@@ -1,11 +1,7 @@
 * {
     font-family: sans-serif;
     box-sizing: border-box;
-    /*
-       CSS comment
-       The box-sizing CSS property sets how the total width and height of an element are calculated.
-       If you set box-sizing: border-box; on an element, padding, and border are included in the width and height:
-    */
+
     body {
         line-height: 1.6;
         margin: 0;
@@ -15,23 +11,17 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        /*
-          list-style: none = No marker is shown
-        */
     }
 
     a {
         color: #34895e;
         text-decoration: none;
-        /*
-          text-decoration: none - is used here to not show underlining under an anchor element when a mouse hovers over it.
-          Comment it out and check the result on the page.
-        */
     }
 
     .logo {
         margin: 0;
         font-size: 1.1em;
+        float: right;
     }
 
     section {
@@ -112,10 +102,14 @@
     /*
   Applies when the browser's width is 800px wide or wider:
 */
+    .img {
+        float: right;
+    }
+
 
     @media (max-width: 800px) {
-        .logo {
-            display: none
+        .img {
+            display: none;
         }
     }
     @media (min-width: 800px) {
@@ -124,8 +118,8 @@
             display: flex;
         }
         .header {
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 
