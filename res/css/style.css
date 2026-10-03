@@ -179,6 +179,36 @@ section {
     padding: 0.5em;
     flex: 1;
 }
+.login-card {
+    padding: 4em;
+    background-color: var(--background-light);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 40em;
+}
+.login-row {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+.login-row h2 {
+    margin: 0;
+    font-size: 1em;
+    align-self: center;
+}
+.login-row h1{
+    font-size: 1.25em;
+    margin: 0;
+}
+.login-row input{
+    margin: 0.5em;
+}
 
 .button-cta {
     cursor: pointer;
