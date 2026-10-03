@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <link rel="stylesheet" href="res/css/style.css">
+    <title>Add a post</title>
+</head>
+<body class="full-height">
+    <header class="header">
+        <ul class="nav">
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+        <ul class="img">
+            <li>
+                <a href="#">
+                    <img src="res/images/me.png"
+                         width="50"
+                         height="50"
+                         alt="profile"
+                    >
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="main fill">
+        <div class="content-center">
+            <div class="form-card">
+                <div class="form-row">
+                    <label class="text-label" for="post-body">Body text:</label>
+                    <textarea
+                        class="textarea"
+                        id="post-body"
+                        name="post-body"
+                        rows="5"
+                        placeholder="Write a post..."
+                    ></textarea>
+                </div>
+                <div class="form-row">
+                    <label class="text-label" for="post-image">Select file:</label>
+                    <button
+                        id="post-image"
+                        name="post-image"
+                        class="button-secondary text-label"
+                    >Choose file</button>
+                </div>
+                <hr />
+                <a class="button-cta text-label" href="./index.html">Create post</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
