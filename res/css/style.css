@@ -1,136 +1,268 @@
 * {
     font-family: sans-serif;
     box-sizing: border-box;
+}
 
-    body {
-        line-height: 1.6;
-        margin: 0;
-    }
+:root {
+    --background-dark: #a2ccea;
+    --background-light: #c8e5fa;
+    --button-cta: #375482;
+    --button-cta-hover: #293675;
+    --button-secondary: #7398cd;
+    --button-secondary-hover: #6584be;
+}
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
-    a {
-        color: #34895e;
-        text-decoration: none;
-    }
+body {
+    line-height: 1.6;
+    margin: 0;
+}
 
-    .logo {
-        margin: 0;
-        font-size: 1.1em;
-        float: right;
-    }
+body.full-height {
+    display: flex;
+    flex-direction: column;
+}
 
-    section {
-        padding: 10px 15px;
-        margin: 10px;
-        display: block;
-        /*
-          display: block - displays an element as a block element. It starts on a new line, and takes up the whole width
-       */
-    }
-    .header {
-        padding-top: .5em;
-        padding-bottom: .5em;
-        border: 1px solid #646174;
-        background-color: #a2ccea;
-        box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-        /*
-        -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+a {
+    color: #34895e;
+    text-decoration: none;
+}
 
-        -webkit-box-shadow and -moz-box-shadow were browser-specific box-shadow implementations for
-         WebKit browsers like Google Chrome and Safari, and mozilla firefox. Such prefixes are, usually
-         used, when a new CSS feature appears and disappears when the feature is fully supported by
-         the browser.
+hr {
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background-color: #abc7f4;
+}
 
-         In short, concerning Vendor Prefixes (-webkit, -moz, etc.):
-           1- A new CSS feature appears;
-           2- Browsers test the feature;
-           3- Browsers add a prefix to it to allow using it;
-           4- There is no need for the prefix anymore when the feature is fully supported.
-         */
+.logo {
+    margin: 0;
+    font-size: 1.1em;
+    float: right;
+}
 
-        border-radius: 5px;
-    }
-    .nav {
-        margin-top: 5px;
-    }
-
-    .nav a {
-        padding: 10px 15px;
-        text-transform: uppercase;
-        text-align: center;
-        display: block;
-        color: #34495e;
-        font-size: .99em;
-    }
-
-    /* Pseudo-class selector */
-    .nav a:hover {
-        background-color: #7ebeb6;
-        color: #092747;
-    }
-    .grid {
-        margin: 20px auto;
-        width: 100%;
-        border: 1px solid #746161;
-        background-color: #ddd;
-        display: grid;
-        grid-template-columns: auto auto;
-        /*
-          grid-template-columns - the grid-template-columns CSS property defines the numbers and
-          sizing functions of the grid columns.
-        */
-        gap: 10px 10px;
-        /*
-        gap: row-gap and column-gap.
-        */
-    }
-
-    .grid p {
-        background-color: rgb(177, 164, 164);
-        color: white;
-        padding: 20px;
-        font-weight: bold;
-        text-align: center;
-    }
+section {
+    padding: 2em;
+    display: block;
     /*
-  Applies when the browser's width is 800px wide or wider:
-*/
-    .img {
-        float: right;
-    }
-
-
-    @media (max-width: 800px) {
-        .img {
-            display: none;
-        }
-    }
-    @media (min-width: 800px) {
-        .header,
-        .nav {
-            display: flex;
-        }
-        .header {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    }
+      display: block - displays an element as a block element. It starts on a new line, and takes up the whole width
+   */
+}
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #646174;
+    background-color: var(--background-dark);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 
     /*
-     Applies when the browser's width is 1000px wide or wider:
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+
+    -webkit-box-shadow and -moz-box-shadow were browser-specific box-shadow implementations for
+     WebKit browsers like Google Chrome and Safari, and mozilla firefox. Such prefixes are, usually
+     used, when a new CSS feature appears and disappears when the feature is fully supported by
+     the browser.
+
+     In short, concerning Vendor Prefixes (-webkit, -moz, etc.):
+       1- A new CSS feature appears;
+       2- Browsers test the feature;
+       3- Browsers add a prefix to it to allow using it;
+       4- There is no need for the prefix anymore when the feature is fully supported.
      */
 
-    @media (min-width: 1000px) {
-        .header {
-            flex-direction: row;
-            justify-content: space-between;
-        }
+    border-radius: 5px;
+}
+.nav {
+    margin-top: 5px;
+}
+
+.nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    color: #34495e;
+    font-size: .99em;
+}
+
+/* Pseudo-class selector */
+.nav a:hover {
+    background-color: #7ebeb6;
+    color: #092747;
+}
+.grid {
+    margin: 20px auto;
+    width: 100%;
+    border: 1px solid #746161;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: auto auto;
+    /*
+      grid-template-columns - the grid-template-columns CSS property defines the numbers and
+      sizing functions of the grid columns.
+    */
+    gap: 10px 10px;
+    /*
+    gap: row-gap and column-gap.
+    */
+}
+
+.grid p {
+    background-color: rgb(177, 164, 164);
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+/*
+Applies when the browser's width is 800px wide or wider:
+*/
+.img {
+    float: right;
+}
+
+.text-subtitle {
+    font-size: 22px;
+}
+
+.text-label {
+    font-size: 16px;
+}
+
+.fill {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-card {
+    padding: 4em;
+    background-color: var(--background-light);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 40em;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-items: left;
+    flex-wrap: wrap;
+}
+.form-row textarea {
+    resize: none;
+    padding: 0.5em;
+    flex: 1;
+}
+
+.login-card {
+    padding: 4em;
+    background-color: var(--background-light);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 40em;
+}
+.login-row {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+.login-row h2 {
+    margin: 0;
+    font-size: 1em;
+    align-self: center;
+}
+.login-row h1{
+    font-size: 1.25em;
+    margin: 0;
+}
+.login-row input{
+    margin: 0.5em;
+}
+
+
+.button-cta {
+    cursor: pointer;
+    background-color: var(--button-cta);
+    color: white;
+    font-weight: 600;
+    padding: 0.8em 2em;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    align-self: end;
+}
+.button-cta:hover {
+    background-color: var(--button-cta-hover);
+}
+
+.button-secondary {
+    cursor: pointer;
+    background-color: var(--button-secondary);
+    color: white;
+    padding: 0.5em 0.8em;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.button-secondary:hover {
+    background-color: var(--button-secondary-hover);
+}
+
+
+@media (max-width: 800px) {
+    .img {
+        display: none;
+    }
+    .form-card {
+        padding: 2em;
+    }
+}
+@media (min-width: 800px) {
+    .header,
+    .nav {
+        display: flex;
+    }
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/*
+ Applies when the browser's width is 1000px wide or wider:
+ */
+
+@media (min-width: 1000px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
