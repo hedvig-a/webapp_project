@@ -125,11 +125,13 @@ section {
     font-weight: bold;
     text-align: center;
 }
-/*
-Applies when the browser's width is 800px wide or wider:
-*/
+
 .img {
     float: right;
+}
+
+.post-img {
+    float: left;
 }
 
 .text-subtitle {
@@ -202,6 +204,26 @@ Applies when the browser's width is 800px wide or wider:
 }
 .button-secondary:hover {
     background-color: var(--button-secondary-hover);
+}
+.post-list {
+    padding: 1em;
+    background-color: var(--background-light);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 40em;
+}
+
+.post-info {
+    padding: 10px 15px;
+    display: block;
+    color: #34495e;
+    font-size: .99em;
+}
+.post {
+
 }
 
 
