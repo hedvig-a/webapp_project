@@ -146,6 +146,7 @@ section {
     flex: 1;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .content-center {
@@ -178,6 +179,27 @@ section {
     resize: none;
     padding: 0.5em;
     flex: 1;
+}
+
+.login-row {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+.login-row h2 {
+    margin: 0;
+    font-size: 1em;
+    align-self: center;
+}
+.login-row h1{
+    font-size: 1.25em;
+    margin: 0;
+}
+.login-row input{
+    margin: 0.5em;
 }
 
 .button-cta {
