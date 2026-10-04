@@ -218,13 +218,13 @@ section {
 
 .post-info {
     padding: 10px 15px;
+    text-align: left;
     display: block;
     color: #34495e;
     font-size: .99em;
 }
-.post {
 
-}
+
 
 
 @media (max-width: 800px) {
