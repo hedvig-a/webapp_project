@@ -13,6 +13,7 @@
     <header class="header">
         <ul class="nav">
             <li><a class href="./index.html">Home</a></li>
+            <li><a href="./addPost.html">Add post</a></li>
         </ul>
         <ul class="img">
             <li>
@@ -29,7 +30,7 @@
 
     <section class="main fill">
         <div class="content-center">
-            <div class="form-card">
+            <form action="./index.html" class="form-card">
                 <div class="login-row">
                    <h1 class="login-h1">Welcome to PostIt</h1>
                 </div>
@@ -44,25 +45,38 @@
                         id="email"
                         name="email"
                         size="20"
-                        placeholder="email">
+                        placeholder="email"
+                        required
+                    >
                     <input class="login-input"
-                            type="text"
-                            id="password"
-                            name="password"
-                            size="20"
-                            placeholder="password">
+                        type="password"
+                        id="password"
+                        name="password"
+                        size="20"
+                        placeholder="password"
+                        required
+                    >
                 </div>
                 <div class="login-row">
-                    <a
-                            id="logIn"
-                            href="./index.html"
-                            class="button-secondary text-label"
-                    >Log in</a>
+                    <button
+                        id="logIn"
+                        class="button-secondary text-label"
+                        type="submit"
+                    >Log in</button>
                 </div>
                 <div class="login-row">
                     <a href=" ">Forget password</a>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
+
+    <footer class="footer">
+        <ul>
+            <li>
+                <a>footer</a>
+            </li>
+        </ul>
+    </footer>
 </body>
+</html>

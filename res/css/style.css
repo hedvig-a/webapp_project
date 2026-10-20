@@ -10,6 +10,8 @@
     --button-cta-hover: #293675;
     --button-secondary: #7398cd;
     --button-secondary-hover: #6584be;
+    --dark: #092747;
+    --gray: #646174;
 }
 
 html, body {
@@ -87,6 +89,7 @@ section {
     margin-top: 5px;
 }
 
+/* Descendant selector */
 .nav a {
     padding: 10px 15px;
     text-transform: uppercase;
@@ -99,8 +102,27 @@ section {
 /* Pseudo-class selector */
 .nav a:hover {
     background-color: #7ebeb6;
-    color: #092747;
+    color: var(--dark);
 }
+
+/* Child selector */
+div > h1 {
+    text-decoration: underline;
+}
+
+/* Adjacent sibling selector */
+label + textarea {
+    border-color: var(--dark);
+    border-radius: 10px;
+}
+
+/* General sibling selector */
+a ~ p {
+    font-weight: 100;
+    color: var(--gray);
+    font-style: italic;
+}
+
 .grid {
     margin: 20px auto;
     width: 100%;
