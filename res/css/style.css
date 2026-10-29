@@ -152,8 +152,10 @@ a ~ p {
     float: right;
 }
 
-.post-img {
+.account-img {
     display: block;
+    width:3em;
+    height:3em;
 }
 
 .text-subtitle {
@@ -257,6 +259,14 @@ a ~ p {
     max-width: 50em;
 }
 
+.post-img {
+    width: 100%;
+
+}
+
+.post-date {
+
+}
 
 .post-info {
     padding: 0.5em 0.75em;
