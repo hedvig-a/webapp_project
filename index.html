@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="src/js/script.js"></script>
+    <script type="text/javascript" src="src/js/profileDropdown.js" defer></script>
     <link rel="icon" href="res/images/favicon.ico">
     <link rel="stylesheet" href="res/css/style.css">
     <title>Homework 2 - CSS</title>
@@ -18,13 +19,18 @@
         </ul>
         <ul class="img">
             <li>
-                <a href="login.html">
+                <button id="profile-button" class="button-icon">
                     <img src="res/images/me.png"
                          width="50"
                          height="50"
                          alt="profile"
                     >
-                </a>
+                </button>
+                <ul id="profile-menu" class="profile-dropdown" hidden>
+                    <li>username</li>
+                    <li>user@example.com</li>
+                    <li><a href="login.html">> Log out</a></li>
+                </ul>
             </li>
         </ul>
     </header>

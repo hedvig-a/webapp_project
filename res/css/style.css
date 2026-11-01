@@ -251,6 +251,23 @@ a ~ p {
 .button-secondary:hover {
     background-color: var(--button-secondary-hover);
 }
+.button-icon {
+    cursor: pointer;
+}
+.profile-dropdown {
+    position: absolute;
+    right: 1em;
+    top: 4em;
+    background-color: white;
+    padding: 0.5em 1em;
+    border: 1px solid #6c6c6c;
+    border-radius: 8px;
+    color: black;
+    font-size: 18px;
+}
+.profile-dropdown a {
+    color: black;
+}
 .post-list {
     display: flex;
     flex-direction: column;
