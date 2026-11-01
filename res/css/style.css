@@ -12,6 +12,7 @@
     --button-secondary-hover: #6584be;
     --dark: #092747;
     --gray: #646174;
+    font-size: 1.1rem;
 }
 
 html, body {
@@ -61,48 +62,36 @@ section {
    */
 }
 .header {
-    padding-top: .5em;
-    padding-bottom: .5em;
-    border: 1px solid #646174;
-    background-color: var(--background-dark);
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-
-    /*
-    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-
-    -webkit-box-shadow and -moz-box-shadow were browser-specific box-shadow implementations for
-     WebKit browsers like Google Chrome and Safari, and mozilla firefox. Such prefixes are, usually
-     used, when a new CSS feature appears and disappears when the feature is fully supported by
-     the browser.
-
-     In short, concerning Vendor Prefixes (-webkit, -moz, etc.):
-       1- A new CSS feature appears;
-       2- Browsers test the feature;
-       3- Browsers add a prefix to it to allow using it;
-       4- There is no need for the prefix anymore when the feature is fully supported.
-     */
-
-    border-radius: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--background-light);
+    min-height: 5em;
+    align-items: center;
+    flex: none;
 }
-.nav {
-    margin-top: 5px;
+.active-tab {
+    text-decoration: underline;
+    background: var(--background-dark);
 }
 
 /* Descendant selector */
 .nav a {
-    padding: 10px 15px;
+    padding: 0.5em 1em;
     text-transform: uppercase;
     text-align: center;
     display: block;
     color: #34495e;
-    font-size: .99em;
+    border-radius: 8px;
+    font-weight: 800;
+    margin-right: 0.5em;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
 /* Pseudo-class selector */
 .nav a:hover {
-    background-color: #7ebeb6;
+    background-color: var(--background-dark);
     color: var(--dark);
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
 /* Child selector */
