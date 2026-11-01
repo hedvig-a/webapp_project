@@ -6,10 +6,12 @@
 :root {
     --background-dark: #a2ccea;
     --background-light: #c8e5fa;
+    --background-pale: #e9f8ff;
     --button-cta: #375482;
     --button-cta-hover: #293675;
     --button-secondary: #7398cd;
     --button-secondary-hover: #6584be;
+    --border-medium: #4775a6;
     --dark: #092747;
     --gray: #646174;
     font-size: 1.1rem;
@@ -57,9 +59,6 @@ hr {
 section {
     padding: 2em;
     display: block;
-    /*
-      display: block - displays an element as a block element. It starts on a new line, and takes up the whole width
-   */
 }
 .header {
     padding-left: 1em;
@@ -247,15 +246,28 @@ a ~ p {
     position: absolute;
     right: 1em;
     top: 4em;
-    background-color: white;
-    padding: 0.5em 1em;
-    border: 1px solid #6c6c6c;
+    background-color: var(--background-pale);
+    padding: 0.5em 1em 1em 1em;
+    border: 1px solid var(--border-medium);
     border-radius: 8px;
     color: black;
     font-size: 18px;
 }
+.profile-dropdown li {
+    width: 100%;
+    margin-top: 0.5em;
+    color: var(--gray);
+}
 .profile-dropdown a {
+    border-radius: 6px;
+    display: block;
     color: black;
+    transition: background-color 0.1s ease-in-out;
+    width: 100%;
+}
+.profile-dropdown a:hover {
+    background-color: var(--background-light);
+    transition: background-color 0.1s ease-in-out;
 }
 .post-list {
     display: flex;
@@ -297,6 +309,9 @@ a ~ p {
     background-color: var(--background-light);
     border: 1px solid transparent;
     border-radius: 8px;
+}
+.footer-items li {
+    color: var(--dark);
 }
 
 
